@@ -1,0 +1,18 @@
+@AuthChallenge_HostAddress = http://localhost:5043
+
+### Teste 1 - Token válido (espera 204)
+GET {{AuthChallenge_HostAddress}}/foo-bar
+Authorization: vYQIYxOpyfr
+
+###
+
+### Teste 2 - Token inválido (espera 401)
+GET {{AuthChallenge_HostAddress}}/foo-bar
+Authorization: token-errado
+
+###
+
+### Teste 3 - Sem header Authorization (espera 401)
+GET {{AuthChallenge_HostAddress}}/foo-bar
+
+###
