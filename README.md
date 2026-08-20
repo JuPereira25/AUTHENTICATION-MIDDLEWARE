@@ -30,12 +30,9 @@ A API sobe em `http://localhost:5043`.
 
 ## Como testar no VS Code
 
-**Não clique no link `http://localhost:5043`.** O navegador não envia o header `Authorization`, então sempre aparece `Invalid token`.
-
-1. Instale a extensão **REST Client** (Huachao Mao).
-2. Deixe a API rodando.
-3. Abra `AuthChallenge/AuthChallenge.http`.
-4. Clique em **Send Request** acima do `GET` (não no URL).
+1. Deixe a API rodando.
+2. Abra `AuthChallenge/AuthChallenge.http`.
+3. Clique em **Send Request** acima do `GET` (não no URL).
 
 O arquivo já tem três testes:
 
